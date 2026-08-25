@@ -1,0 +1,10 @@
+
+#Faça um algoritmo que leia dois números distintos e apresente-os em ordem crescente.
+
+number1 = float(input("Digite o primeiro número: "))
+number2 = float(input("Digite o segundo número: "))
+
+if number1 <= number2:
+    print("Números em ordem crescente: ", number1, ",", number2)
+else:
+    print("Números em ordem crescente: ", number2, ",", number1)
