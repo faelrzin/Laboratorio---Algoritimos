@@ -1,0 +1,10 @@
+
+#Faça um algoritmo que leia o ano de nascimento de uma pessoa e verifique se ela pode ou não votar (desconsidere o mês de nascimento).
+ano_nascimento = int(input("Digite o ano de nascimento: "))
+ano_atual = 2026
+idade = ano_atual - ano_nascimento
+
+if idade >= 16:
+    print("A pessoa pode votar.")
+else:
+    print("A pessoa não pode votar.")
