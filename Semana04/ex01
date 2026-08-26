@@ -1,0 +1,8 @@
+treinador = input("Digite seu nome: ")
+salario = float(input("Digite o salario atual: R$ "))
+servico = int(input("Digite tempo de serviço em anos: "))
+
+if servico >5 and salario <= 2000:
+    print(treinador, "tera um aumento de 10%, de salario.", salario + (salario *0.10), "R$" )
+else:
+    print(treinador, "tera um aumento 5%, de salario.", salario + (salario *0.5), "R$")
