@@ -1,0 +1,18 @@
+
+valor_base = float(input("Digite o valor base do ingresso: "))
+opcao = int(input("Escolha a opção:\n1 - Ingresso normal\n2 - Estudante (50% de desconto)\n3 - Criança até 12 anos (40% do valor)\n4 - Idoso (60% do valor)\n"))
+
+if opcao == 1:
+    valor_final = valor_base
+elif opcao == 2:
+    valor_final = valor_base * 0.50
+elif opcao == 3:
+    valor_final = valor_base * 0.40
+elif opcao == 4:
+    valor_final = valor_base * 0.60
+else:
+    print("Opção inválida!")
+    valor_final = 0
+
+if opcao in (1, 2, 3, 4):
+    print(f"Valor a pagar: R$ {valor_final:.2f}")
