@@ -1,0 +1,14 @@
+
+valor = float(input("Digite o valor da inscrição: "))
+opcao = int(input("Escolha a forma de pagamento:\n1 - À vista\n2 - Em 2 vezes\n3 - Em 3 vezes\n"))
+
+if opcao == 1:
+    print(f"Pagamento à vista: R$ {valor:.2f}")
+elif opcao == 2:
+    parcela = valor / 2
+    print(f"Pagamento em 2 vezes de R$ {parcela:.2f}")
+elif opcao == 3:
+    parcela = valor / 3
+    print(f"Pagamento em 3 vezes de R$ {parcela:.2f}")
+else:
+    print("Opção inválida!")
