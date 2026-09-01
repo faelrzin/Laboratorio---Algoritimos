@@ -1,0 +1,7 @@
+
+alternativa = input("Qual é a distância oficial de uma maratona?\nA) 10 km\nB) 42,195 km\nC) 21 km\nD) 50 km\nDigite a letra da alternativa: ").strip().upper()
+
+if alternativa == "B":
+    print("Resposta correta! Você acertou.")
+else:
+    print("Resposta incorreta. A resposta correta é a letra B.")
