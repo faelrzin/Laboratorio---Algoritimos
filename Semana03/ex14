@@ -1,0 +1,9 @@
+
+a = float(input("Digite a primeira força: "))
+b = float(input("Digite a segunda força: "))
+c = float(input("Digite a terceira força: "))
+
+if a + b > c and a + c > b and b + c > a:
+    print("As três forças podem manter o corpo em equilíbrio.")
+else:
+    print("Não há equilíbrio.")
