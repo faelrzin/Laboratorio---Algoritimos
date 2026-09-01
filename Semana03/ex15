@@ -1,0 +1,18 @@
+
+nome = input("Digite o nome do treinador: ")
+salario = float(input("Digite o salário atual: "))
+tempo = int(input("Digite o tempo de serviço em anos: "))
+
+if tempo >= 10:
+    percentual = 0.20
+elif tempo >= 5:
+    percentual = 0.15
+else:
+    percentual = 0.10
+
+aumento = salario * percentual
+novo_salario = salario + aumento
+
+print("Nome do treinador:", nome)
+print("Aumento concedido: R$ {:.2f}".format(aumento))
+print("Novo salário: R$ {:.2f}".format(novo_salario))
