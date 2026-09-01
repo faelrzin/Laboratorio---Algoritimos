@@ -1,0 +1,32 @@
+
+print("Escolha o kit:")
+print("1 - Kit Básico - R$ 100,00")
+print("2 - Kit Plus - R$ 120,00")
+print("3 - Kit Premium - R$ 150,00")
+
+opcao = int(input("Digite a opção do kit: "))
+valor_entregue = float(input("Digite o valor entregue em R$: "))
+
+if opcao == 1:
+    valor_kit = 100.00
+    nome_kit = "Kit Básico"
+elif opcao == 2:
+    valor_kit = 120.00
+    nome_kit = "Kit Plus"
+elif opcao == 3:
+    valor_kit = 150.00
+    nome_kit = "Kit Premium"
+else:
+    print("Opção inválida!")
+    exit()
+
+if valor_entregue >= valor_kit:
+    troco = valor_entregue - valor_kit
+    print(f"Você recebeu: {nome_kit}")
+    if troco > 0:
+        print(f"Troco: R$ {troco:.2f}")
+    else:
+        print("Pagamento exato.")
+else:
+    falta = valor_kit - valor_entregue
+    print(f"Valor insuficiente. Falta R$ {falta:.2f}")
