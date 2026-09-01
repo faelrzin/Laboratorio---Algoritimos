@@ -1,0 +1,27 @@
+
+respostas = [
+    "Você treinou regularmente nas últimas semanas? (s/n): ",
+    "Participou de treinos longos (acima de 10 km)? (s/n): ",
+    "Seguiu uma dieta especial para a corrida? (s/n): ",
+    "Já competiu em provas oficiais neste ano? (s/n): ",
+    "Conta com acompanhamento de treinador ou equipe? (s/n): "
+]
+
+positivas = 0
+
+for pergunta in respostas:
+    resposta = input(pergunta).strip().lower()
+    if resposta in ("s", "sim"):
+        positivas += 1
+
+if positivas < 2:
+    classificacao = "Não Preparado"
+elif positivas == 2:
+    classificacao = "Participante Casual"
+elif positivas in (3, 4):
+    classificacao = "Atleta Competitivo"
+else:
+    classificacao = "Atleta de Elite"
+
+print(f"Respostas positivas: {positivas}")
+print(f"Classificação: {classificacao}")
