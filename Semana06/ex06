@@ -1,0 +1,16 @@
+
+numero_secreto = 73
+tentativas = 0
+
+while True:
+    tentativa = int(input("Tente descobrir o número entre 1 e 100: "))
+    tentativas += 1
+
+    if tentativa < numero_secreto:
+        print("Tente um número maior!")
+    elif tentativa > numero_secreto:
+        print("Tente um número menor!")
+    else:
+        print("Parabéns! Você encontrou a embalagem premiada!")
+        print("Tentativas necessárias:", tentativas)
+        break
