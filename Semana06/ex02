@@ -1,0 +1,9 @@
+
+total_pacotes = 30
+quantidade_caixas = 4
+
+pacotes_por_caixa = total_pacotes // quantidade_caixas
+pacotes_sobrando = total_pacotes % quantidade_caixas
+
+print("Pacotes em cada caixa:", pacotes_por_caixa)
+print("Pacotes sobrando:", pacotes_sobrando)
