@@ -1,0 +1,13 @@
+
+producao_primeira = 5000
+producao_concorrente = 8000
+meses = 0
+
+while producao_primeira < producao_concorrente:
+    producao_primeira *= 1.05
+    producao_concorrente *= 1.01
+    meses += 1
+
+print("Meses necessários:", meses)
+print("Produção da primeira empresa:", round(producao_primeira, 2), "pacotes")
+print("Produção da concorrente:", round(producao_concorrente, 2), "pacotes")
