@@ -1,0 +1,26 @@
+
+total = 0
+maior = 0
+menor = None
+todos_os_dias = 0
+
+for pessoa in range(1, 21):
+    vezes = int(input(f"Quantas vezes a pessoa {pessoa} toma chimarrão por semana? "))
+
+    total += vezes
+
+    if menor is None or vezes < menor:
+        menor = vezes
+
+    if vezes > maior:
+        maior = vezes
+
+    if vezes >= 7:
+        todos_os_dias += 1
+
+media = total / 20
+
+print("Média de vezes por semana:", media)
+print("Maior quantidade:", maior)
+print("Menor quantidade:", menor)
+print("Pessoas que tomam todos os dias:", todos_os_dias)
