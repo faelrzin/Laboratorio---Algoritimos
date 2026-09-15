@@ -1,0 +1,22 @@
+
+quantidade = int(input("Quantos pacotes de erva-mate você deseja comprar? "))
+
+preco_por_pacote = 20.00
+valor_original = quantidade * preco_por_pacote
+
+if quantidade <= 5:
+    percentual_desconto = 0
+elif quantidade <= 10:
+    percentual_desconto = 5
+elif quantidade <= 20:
+    percentual_desconto = 10
+else:
+    percentual_desconto = 15
+
+valor_desconto = valor_original * percentual_desconto / 100
+valor_final = valor_original - valor_desconto
+
+print(f"\nValor original: R$ {valor_original:.2f}".replace(".", ","))
+print(f"Percentual de desconto: {percentual_desconto}%")
+print(f"Valor do desconto: R$ {valor_desconto:.2f}".replace(".", ","))
+print(f"Valor final da compra: R$ {valor_final:.2f}".replace(".", ","))
