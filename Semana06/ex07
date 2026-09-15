@@ -1,0 +1,9 @@
+agua = 1800  # capacidade da térmica em ml
+cuia = 45
+quantidade_cuias = 0
+
+while agua >= cuia:
+    agua -= cuia
+    quantidade_cuias += 1
+
+print(f"Foram servidas {quantidade_cuias} cuias completas.")
