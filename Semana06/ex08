@@ -1,0 +1,11 @@
+
+chimarraos_por_dia = int(input("Quantos chimarrões você prepara por dia? "))
+
+consumo_mensal = chimarraos_por_dia * 40 * 30
+
+print(f"Consumo estimado em 30 dias: {consumo_mensal / 1000:.2f} kg")
+
+if consumo_mensal > 3000:
+    print("Grande consumidor de erva-mate")
+else:
+    print("Consumidor moderado de erva-mate")
