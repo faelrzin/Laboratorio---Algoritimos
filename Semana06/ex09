@@ -1,0 +1,8 @@
+print("Ervateira Recanto - Tabela de Preços\n")
+
+preco_por_pacote = 18.90
+
+for quantidade in range(1, 31):
+    total = quantidade * preco_por_pacote
+    pacote = "pacote" if quantidade == 1 else "pacotes"
+    print(f"{quantidade:2d} {pacote:<8} - R$ {total:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."))
