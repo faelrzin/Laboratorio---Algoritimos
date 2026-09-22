@@ -1,0 +1,78 @@
+Primeria Questão
+numero = int(input("Digite um número inteiro positivo: "))
+
+while numero < 0:
+    numero = int(input("Digite um número inteiro positivo: "))
+
+while numero >= 0:
+    print(numero)
+    numero -= 1
+
+Segunda Questão
+a = 0
+b = 0
+c = 0
+
+for i in range(10):
+    elevador = input("Qual elevador você usa? A, B ou C: ").upper()
+
+    if elevador == "A":
+        a += 1
+    elif elevador == "B":
+        b += 1
+    elif elevador == "C":
+        c += 1
+
+print("Elevador A:", a, "pessoas -", a * 10, "%")
+print("Elevador B:", b, "pessoas -", b * 10, "%")
+print("Elevador C:", c, "pessoas -", c * 10, "%")
+
+
+
+Terceira Questão
+opcao = 0
+total_gasolina = 0
+total_diesel = 0
+
+while opcao != 2:
+    print("\n1 - Vender combustível")
+    print("2 - Sair")
+    opcao = int(input("Escolha uma opção: "))
+
+    if opcao == 1:
+        print("\n1 - Gasolina - R$ 6,89")
+        print("2 - Diesel - R$ 4,80")
+
+        combustivel = int(input("Escolha o combustível: "))
+        litros = float(input("Quantidade de litros: "))
+
+        if combustivel == 1:
+            preco = 6.89
+            total_gasolina += litros
+        elif combustivel == 2:
+            preco = 4.80
+            total_diesel += litros
+        else:
+            print("Opção de combustível inválida!")
+            continue
+
+        valor = litros * preco
+        print("Valor do abastecimento: R$", valor)
+
+        pagamento = float(input("Valor pago: R$ "))
+
+        if pagamento >= valor:
+            print("Troco: R$", pagamento - valor)
+        else:
+            print("Faltou: R$", valor - pagamento)
+
+    elif opcao != 2:
+        print("Opção inválida!")
+
+print("\nTotal de gasolina vendido:", total_gasolina, "litros")
+print("Total de diesel vendido:", total_diesel, "litros")
+print("Sistema encerrado.")
+
+Quarta questão
+
+7
