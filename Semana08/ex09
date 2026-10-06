@@ -1,0 +1,32 @@
+jornal_a = 0
+jornal_b = 0
+jornal_c = 0
+
+for i in range(20):
+    jornal = input("Digite o jornal escolhido (A, B ou C): ").upper()
+
+    if jornal == "A":
+        jornal_a += 1
+    elif jornal == "B":
+        jornal_b += 1
+    elif jornal == "C":
+        jornal_c += 1
+    else:
+        print("Opção inválida!")
+
+porc_a = (jornal_a / 20) * 100
+porc_b = (jornal_b / 20) * 100
+porc_c = (jornal_c / 20) * 100
+
+resultados = [
+    ("Jornal A", porc_a),
+    ("Jornal B", porc_b),
+    ("Jornal C", porc_c)
+]
+
+resultados.sort(key=lambda x: x[1])
+
+print("\nPorcentagens em ordem crescente:")
+
+for jornal, porcentagem in resultados:
+    print(jornal, ":", porcentagem, "%")
