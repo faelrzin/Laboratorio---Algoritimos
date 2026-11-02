@@ -1,0 +1,12 @@
+def calcular_dobro(valor):
+    return valor * 2
+
+
+def calcular_triplo(valor):
+    return valor * 3
+
+
+numero = float(input("Digite um valor: "))
+
+print("Dobro:", calcular_dobro(numero))
+print("Triplo:", calcular_triplo(numero))
