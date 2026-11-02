@@ -1,0 +1,11 @@
+def somaImposto(taxaImposto, custo):
+    custo += custo * (taxaImposto / 100)
+    return custo
+
+
+taxa = float(input("Digite a taxa de imposto (%): "))
+custo = float(input("Digite o custo do item antes do imposto: R$ "))
+
+custo = somaImposto(taxa, custo)
+
+print(f"Custo com imposto: R$ {custo:.2f}")
