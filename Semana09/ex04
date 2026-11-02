@@ -1,0 +1,11 @@
+def calcular_total(quantidade):
+    if quantidade <= 12:
+        return quantidade * 0.40
+    else:
+        return quantidade * 0.25
+
+
+laranjas = int(input("Digite o total de laranjas compradas: "))
+total = calcular_total(laranjas)
+
+print(f"Valor total da compra: R$ {total:.2f}")
