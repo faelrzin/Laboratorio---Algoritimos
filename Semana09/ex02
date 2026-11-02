@@ -1,0 +1,10 @@
+def exibir_ola():
+    print("Olá")
+
+
+def exibir_tchau():
+    print("Tchau")
+
+
+exibir_ola()
+exibir_tchau()
