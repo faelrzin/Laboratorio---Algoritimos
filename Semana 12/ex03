@@ -1,0 +1,8 @@
+kg_colhidos = []preco_por_kg = []valor_arvore = []for i in range(5): 
+kg = float(input("Digite os kg colhidos na árvore: "))   
+kg_colhidos.append(kg)for i in range(5):    
+preco = float(input("Digite o preço por kg: R$ "))  
+preco_por_kg.append(preco)for i in range(5):   
+valor = kg_colhidos[i] * preco_por_kg[i]  
+valor_arvore.append(valor)print("Valor obtido por árvore:")for i in range(5):  
+print(valor_arvore[i])
