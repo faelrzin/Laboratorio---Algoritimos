@@ -1,0 +1,3 @@
+producao = []for i in range(5):   
+valor = float(input("Digite a produção em kg: "))  
+producao.append(valor)print("Produções na ordem inversa:")for i in range(4, -1, -1):    print(producao[i])
