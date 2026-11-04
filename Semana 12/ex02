@@ -1,0 +1,8 @@
+fazendaA = []fazendaB = []total = []for i in range(5):    
+valor = int(input("Produção da Fazenda A: "))   
+fazendaA.append(valor)for i in range(5):  
+valor = int(input("Produção da Fazenda B: "))   
+fazendaB.append(valor)for i in range(5):    
+soma = fazendaA[i] + fazendaB[i]  
+total.append(soma)print("Produção total por lote:")for i in range(5):
+print(total[i])
