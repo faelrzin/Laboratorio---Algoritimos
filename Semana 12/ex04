@@ -1,0 +1,11 @@
+lotes = []opcao = 0while opcao != 8:    print("\n--- MENU DE LOTES ---")   
+print("1 - Inserir lote")    print("2 - Listar lotes")    print("3 - Retirar um lote")   
+print("4 - Limpar todos os lotes")    print("5 - Contar lotes com valor maior que X")  
+print("6 - Verificar se um código está presente")    print("7 - Encontrar maior e menor código")  
+print("8 - Sair")    opcao = int(input("Escolha uma opção: "))
+if opcao == 1:        codigo = int(input("Digite o código do lote: "))     
+if codigo % 2 == 0:            lotes.append(codigo)            print("Lote inserido!")  
+else:            print("ERRO! Só são aceitos códigos pares.")    elif opcao == 2:    
+if len(lotes) > 0:            for i in range(len(lotes)):                print(lotes[i])    
+else:            print("Não existem lotes cadastrados.")  
+elif opcao == 3:        codigo = int(input("Digite o código que deseja retirar: "))        if codigo in lotes:
